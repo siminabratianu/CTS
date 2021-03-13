@@ -22,7 +22,7 @@ public class Program  {
 			listaAplicanti = readAplicant(new AngajatReader("angajati.txt"));
 			for(Aplicant aplicant:listaAplicanti) {
 				System.out.println(aplicant.toString());
-			//	aplicant.afiseazaSumaFinanata();
+				aplicant.afiseazaSumaFinantata();
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
