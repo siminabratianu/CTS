@@ -21,6 +21,14 @@ public class Elev extends Aplicant{
 	}
 	
 	
+	
+	
+	public static int getSumaFinantata() {
+		return sumaFinantata;
+	}
+	public static void setSumaFinantata(int sumaFinantata) {
+		Elev.sumaFinantata = sumaFinantata;
+	}
 	@Override
 	public String toString() {
 		return "Elev: Nume=" + nume + ", Prenume=" + prenume + ", Varsta="
