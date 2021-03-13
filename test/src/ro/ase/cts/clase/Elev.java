@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Elev extends Aplicant{
 	private int clasa;
 	private String tutore;
+	private static int sumaFinantata=10;
 	
 	public int getClasa() {
 		return clasa;
@@ -38,10 +39,10 @@ public class Elev extends Aplicant{
 		this.tutore = tutore;
 	}
 	
-	public int finantare() {
-		int s=30;
-		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-		return s;
+	public void afiseazaSumaFinantata() {
+		
+		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+sumaFinantata+" Euro/zi in proiect.");
+		
 	}
 	
 }
