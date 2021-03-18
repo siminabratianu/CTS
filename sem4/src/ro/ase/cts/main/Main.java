@@ -1,5 +1,6 @@
 package ro.ase.cts.main;
 
+import ro.ase.cts.clase.Biserica;
 import ro.ase.cts.clase.DepartamentFinanciar;
 import ro.ase.cts.clase.DepartamentFinanciarEager;
 
@@ -24,6 +25,13 @@ public class Main {
 		
 		System.out.println(primulDepartamanetFinanciar.toString());
 		System.out.println(alDoileaDepartamanetFinanciar.toString());
+		
+		
+		Biserica primaBiserica=Biserica.getInstBiserica("Sfanta Maria", 5, 10);
+		Biserica adouaBiserica=Biserica.getInstBiserica("Slujba de dimineata", 25, 15);
+		
+		System.out.println(primaBiserica.toString());
+		System.out.println(adouaBiserica.toString());
 		
 	}
 
