@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
+import categorii.TestGetPromovabilitate;
 import clase.Grupa;
 import clase.Student;
 
@@ -29,6 +30,7 @@ public class TestGrupa {
 		
 	}
 	@Test
+	@Category({TestGetPromovabilitate.class})
 	public void getPromovabilitateRight()
 	{
 		Student student2=new Student("Marcel");
@@ -45,12 +47,14 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category({TestGetPromovabilitate.class})
 	public void getPromovabilitateBoundry()
 	{
 		assertEquals(0, grupa.getPromovabilitate(),0.05);
 	}
 
 	@Test
+	@Category({TestGetPromovabilitate.class})
 	public void testGetPromovabilitateUpperBoundry()
 	{
 		Grupa grupaNoua=new Grupa(1076);
@@ -85,6 +89,7 @@ public class TestGrupa {
 
 	
 	@Test
+	
 	public void testRight()
 	{
 		Grupa grupa=new Grupa(1077);
